@@ -24,7 +24,7 @@ Run Commands
 * bash scripts_land/*name of source*.sh ( i.e bash oreo-reloaded.sh)
 
 ```bash
-      bash oreo-reloaded.sh
+      bash scripts_land/oreo-reloaded.sh
 ```
 
 * It will clone all files automatically.
