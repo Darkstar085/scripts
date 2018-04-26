@@ -7,7 +7,6 @@ git clone https://github.com/fedosis/android_kernel_xiaomi_msm8937-1.git kernel/
 rm -rf vendor/xiaomi
 git clone https://github.com/fedosis/proprietary_vendor_xiaomi -b cm-13.0-up vendor/xiaomi
 
-
 #HAL's
 rm -rf hardware/qcom/audio-caf
 git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b cm-13.0-caf-8937 hardware/qcom/media-caf/msm8937
@@ -19,7 +18,6 @@ rm -rf device/qcom/common
 git clone https://Github.com/lineageos/android_device_qcom_common -b cm-13.0 device/qcom/common
 rm -rf vendor/qcom/opensource/cryptfs_hw
 git clone https://Github.com/lineageos/android_vendor_qcom_opensource_cryptfs_hw -b cm-13.0 vendor/qcom/opensource/cryptfs_hw
-
 
 #Patch
 cd vendor/cm
