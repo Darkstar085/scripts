@@ -7,7 +7,6 @@ git clone https://github.com/TeamReloaded/android_kernel_xiaomi_msm8937.git -b l
 rm -rf vendor/xiaomi
 git clone https://github.com/TeamReloaded/proprietary_vendor_xiaomi.git -b lineage-15.1-land vendor/xiaomi
 
-
 #HAL's
 rm -rf hardware/qcom/audio-caf
 git clone https://github.com/TeamReloaded/hardware_qcom_audio.git -b oreo-mr1-8937 hardware/qcom/audio-caf/msm8996 
