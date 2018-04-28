@@ -6,8 +6,7 @@ rm -rf kernel/xiaomi/msm8937
 git clone https://github.com/nichcream/wingtech_kernel_msm8937.git -b 8.1 kernel/xiaomi/msm8937
 rm -rf vendor/xiaomi
 git clone https://github.com/nichcream/proprietary_vendor_xiaomi.git -b 8.1 vendor/xiaomi
-#
-#HAL's
+#Hals
 rm -rf hardware/qcom/audio-caf
 git clone https://github.com/TeamReloaded/hardware_qcom_audio.git -b oreo-mr1-8937 hardware/qcom/audio-caf/msm8996 
 git clone https://github.com/TeamReloaded/hardware_qcom_audio.git -b oreo-mr1-8937 hardware/qcom/audio-caf/msm8937
