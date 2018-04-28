@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/Sweeto143/scripts_land/blob/master/logo.png" > 
+ <img src="https://github.com/Sweeto143/scripts_land/blob/land/logo.png" > 
 </p>
 
 -----------------------------------------------------------------------
