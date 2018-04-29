@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #Created By Darkstar
 #Device specific BLOBS 
 rm -rf device/xiaomi/land

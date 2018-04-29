@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/Sweeto143/scripts_land/blob/land/logo.png" > 
+ <img src="https://github.com/Sweeto143/scripts_land/blob/master/logo.png" > 
 </p>
 
 -----------------------------------------------------------------------
@@ -18,7 +18,7 @@ Run Commands
 * Clone this repo into Rom Source Directry.(i.e if you are syncing *lineage* then in ~/lineage).
 
 ```bash
-      git clone https://github.com/Sweeto143/scripts_land.git -b land
+      git clone https://github.com/Sweeto143/scripts_land.git
 ```
 
 * bash scripts_land/*name of source*.sh ( i.e bash oreo-reloaded.sh)
