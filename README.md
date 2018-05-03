@@ -21,10 +21,16 @@ Run Commands
       git clone https://github.com/Sweeto143/scripts_land.git -b land
 ```
 
-* bash scripts_land/*name of source*.sh ( i.e bash oreo-reloaded.sh)
+* Clone the source you want.
 
 ```bash
-      bash scripts_land/oreo-reloaded.sh
+      bash scripts_land/<name_of_the_source> 
+```
+
+Example
+
+```bash
+      bash scripts_land/darkstar.sh 
 ```
 
 * It will clone all files automatically.
