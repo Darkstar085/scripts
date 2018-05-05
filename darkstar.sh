@@ -47,13 +47,6 @@ git clone https://github.com/TeamReloaded/hardware_qcom_media.git -b oreo-mr1-89
 git clone https://github.com/TeamReloaded/hardware_qcom_media.git -b oreo-mr1-8937 hardware/qcom/media-caf/msm8937
 echo -e "${CLR_BLD_RED}Sync Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_RED}Applying Bionic Patch...${CLR_RST}"
-cd bionic
-git fetch https://github.com/TeamReloaded/bionic
-git cherry-pick 1e55ab48ba3f3db809163e0476051aad718d70f2^..678dd8ad22225dfef8d76a2e9cac92dc3a843e88
-cd ..
-echo -e "${CLR_BLD_RED}Patch Complete...${CLR_RST}"
-echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
 echo -e ""
 echo -e ""
