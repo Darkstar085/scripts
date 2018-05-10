@@ -1,3 +1,8 @@
+#!/bin/bash
+# Copyright (C) 2015 Paranoid Android Project
+# Copyright (C) 2018 Darkstar085<sipunkumar85@gmail.com)
+# Copyright (C) 2018 Sweeto143
+
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
 # plain for generic text, bold for titles, reset flag at each end of line
