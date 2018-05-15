@@ -1,3 +1,8 @@
+#!/bin/bash
+# Copyright (C) 2015 Paranoid Android Project
+# Copyright (C) 2018 Darkstar085<sipunkumar85@gmail.com)
+# Copyright (C) 2018 Sweeto143
+
 git clone https://github.com/Sweeto143/dot_device_xiaomi_land.git -b dot-o device/xiaomi/land
 git clone https://github.com/Sweeto143/android_kernel_xiaomi_msm8937.git -b oreo kernel/xiaomi/msm8937
 git clone https://github.com/Sweeto143/proprietary_vendor_xiaomi.git -b oreo vendor/xiaomi
