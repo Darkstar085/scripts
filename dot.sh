@@ -22,10 +22,13 @@ CLR_BLD_BLU=$CLR_RST$CLR_BLD$(tput setaf 4) #  blue, bold
 CLR_BLD_PPL=$CLR_RST$CLR_BLD$(tput setaf 5) #  purple, bold
 CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
 
+echo -e "${CLR_BLD_GRN}Syncing device repos...${CLR_RST}"
 git clone https://github.com/Sweeto143/dot_device_xiaomi_land.git -b dot-o device/xiaomi/land
 git clone https://github.com/Sweeto143/android_kernel_xiaomi_msm8937.git -b oreo kernel/xiaomi/msm8937
 git clone https://github.com/Sweeto143/proprietary_vendor_xiaomi.git -b oreo vendor/xiaomi
-
+echo -e "${CLR_BLD_GRN}Sync Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_GRN}Syncing Hals...${CLR_RST}"
 rm -rf hardware/qcom/audio-caf
 rm -rf hardware/qcom/media-caf
 rm -rf hardware/qcom/display-caf
@@ -35,3 +38,8 @@ git clone https://github.com/TeamReloaded/hardware_qcom_display.git -b lineage-1
 git clone https://github.com/TeamReloaded/hardware_qcom_display.git -b lineage-15.1-caf-8996 hardware/qcom/display-caf/msm8937
 git clone https://github.com/TeamReloaded/hardware_qcom_media.git -b lineage-15.1-caf-8996 hardware/qcom/media-caf/msm8996
 git clone https://github.com/TeamReloaded/hardware_qcom_media.git -b lineage-15.1-caf-8996 hardware/qcom/media-caf/msm8937
+echo -e "${CLR_BLD_GRN}Sync Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
+echo -e ""
+echo -e ""
