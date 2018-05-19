@@ -47,11 +47,6 @@ git clone https://github.com/TeamReloaded/hardware_qcom_media.git -b lineage-15.
 git clone https://github.com/TeamReloaded/hardware_qcom_media.git -b lineage-15.1-caf-8996 hardware/qcom/media-caf/msm8937
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Cloning Toolchain...${CLR_RST}"
-rm -rf prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android
-git clone https://github.com/krasCGQ/aarch64-linux-android.git -b opt-gnu-7.x prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android
-echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
-echo -e ""
 echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
 echo -e ""
 echo -e ""
