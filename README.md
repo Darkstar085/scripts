@@ -10,7 +10,7 @@ Run Commands
 * Clone this repo into Rom Source Directry.(i.e if you are syncing *lineage* then in ~/lineage).
 
 ```bash
-      git clone https://github.com/B50Corei5/scripts_kuntao.git -b kuntao
+      git clone https://github.com/B50Corei5/scripts_kuntao.git -b Kuntao
 ```
 
 * Clone the source you want.
