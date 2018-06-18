@@ -25,7 +25,10 @@ CLR_BLD_BLU=$CLR_RST$CLR_BLD$(tput setaf 4) #  blue, bold
 CLR_BLD_PPL=$CLR_RST$CLR_BLD$(tput setaf 5) #  purple, bold
 CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
 
-
+echo -e "${CLR_BLD_GRN}Cloning them rom sources and building 4 you automatically sir${CLR_RST}"
+repo init -u git://github.com/FireHound/platform_manifest.git -b o8.1
+repo sync
+echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
 git clone https://github.com/B50Corei5/UnofficialRoms -b firehound-o device/lenovo/kuntao
 git clone https://github.com/kuntao-development/android_vendor_lenovo_kuntao -b lineage-15.1 vendor/lenovo/kuntao
