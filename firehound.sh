@@ -27,7 +27,7 @@ CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
 
 echo -e "${CLR_BLD_GRN}Cloning them rom sources and building 4 you automatically sir${CLR_RST}"
 repo init -u git://github.com/FireHound/platform_manifest.git -b o8.1
-repo sync
+repo sync -j8
 echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
 git clone https://github.com/B50Corei5/UnofficialRoms -b firehound-o device/lenovo/kuntao
@@ -41,5 +41,5 @@ echo -e ""
 echo -e "${CLR_BLD_GRN}Automatically Building for you sir${CLR_RST}"
 source build/envsetup.sh
 lunch fh_kuntao-userdebug
-brunch kuntao
+brunch kuntao -j8
 eco -e ""
