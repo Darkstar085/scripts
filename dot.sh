@@ -32,5 +32,6 @@ git clone https://github.com/dotOS-Devices/android_kernel_lenovo_kuntao.git -b d
 git clone https://github.com/dotOS-Devices/proprietary_vendor_lenovo_kuntao.git -b dot-o vendor/lenovo
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Deleting Stupid Doze thingy${CLR_RST}"
+rm -rf device/lenovo/kuntao/doze
 echo -e ""
