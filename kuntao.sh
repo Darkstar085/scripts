@@ -30,18 +30,11 @@ echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  �
 echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
-git clone https://github.com/BirdSanctuary/android_device_xiaomi_land.git -b oreo-mr1 device/xiaomi/land
-git clone https://github.com/BirdSanctuary/android_kernel_xiaomi_land.git -b oreo-mr1 kernel/xiaomi/msm8937
-git clone https://github.com/BirdSanctuary/proprietary_vendor_xiaomi_land.git -b oreo-mr1 vendor/xiaomi
+git clone https://github.com/kuntao-development/android_device_lenovo_kuntao -b lineage-15.1 device/lenovo/kuntao
+git clone https://github.com/kuntao-development/android_vendor_lenovo_kuntao -b lineage-15.1 vendor/lenovo/kuntao
+git clone https://github.com/arghyac35/android_kernel_lenovo_msm8953 -b 8.1.x kernel/lenovo/msm8953
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Cloning Hals...${CLR_RST}"
-rm -rf hardware/qcom/audio-caf
-rm -rf hardware/qcom/media-caf
-rm -rf hardware/qcom/display-caf
-git clone https://github.com/Sweeto143/hardware_qcom_audio.git -b oreo hardware/qcom/audio-caf/msm8996
-git clone https://github.com/Sweeto143/hardware_qcom_display.git -b oreo hardware/qcom/display-caf/msm8996
-git clone https://github.com/Sweeto143/hardware_qcom_media.git -b oreo hardware/qcom/media-caf/msm8996
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
