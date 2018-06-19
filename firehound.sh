@@ -30,7 +30,7 @@ repo init -u git://github.com/FireHound/platform_manifest.git -b o8.1
 repo sync -j8
 echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
-git clone https://github.com/B50Corei5/UnofficialRoms -b firehound-o device/lenovo/kuntao
+git clone https://github.com/B50Corei5/firehound-o -b firehound-o device/lenovo/kuntao
 git clone https://github.com/kuntao-development/android_vendor_lenovo_kuntao -b lineage-15.1 vendor/lenovo/kuntao
 git clone https://github.com/arghyac35/android_kernel_lenovo_msm8953 -b 8.1.x kernel/lenovo/msm8953
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
@@ -43,3 +43,5 @@ source build/envsetup.sh
 lunch fh_kuntao-userdebug
 brunch kuntao -j8
 eco -e ""
+echo -e "${CLR_BLD_GRN}Closing de server${CLR_RST}"
+sudo shutdown -h now
