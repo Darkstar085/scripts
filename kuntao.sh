@@ -29,20 +29,13 @@ echo -e "${CLR_BLD_GRN}██║  ██║██╔══██║██╔═�
 echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
 echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Syncing device repos...${CLR_RST}"
-git clone https://github.com/LineageOS/android_device_xiaomi_land.git -b cm-14.1 device/xiaomi/land
-git clone https://github.com/LineageOS/android_kernel_xiaomi_msm8937.git -b cm-14.1 kernel/xiaomi/msm8937
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi.git -b cm-14.1 vendor/xiaomi
-echo -e "${CLR_BLD_GRN}Sync Complete...${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
+git clone https://github.com/kuntao-development/android_device_lenovo_kuntao -b lineage-15.1 device/lenovo/kuntao
+git clone https://github.com/kuntao-development/android_vendor_lenovo_kuntao -b lineage-15.1 vendor/lenovo/kuntao
+git clone https://github.com/arghyac35/android_kernel_lenovo_msm8953 -b 8.1.x kernel/lenovo/msm8953
+echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Syncing Hals...${CLR_RST}"
-rm -rf hardware/qcom/audio-caf
-rm -rf hardware/qcom/media-caf
-rm -rf hardware/qcom/display-caf
-git clone https://github.com/LineageOS/android_hardware_qcom_audio.git -b cm-14.1-caf-8937 hardware/qcom/audio-caf/msm8937
-git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b cm-14.1-caf-8937 hardware/qcom/display-caf/msm8937
-git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b cm-14.1-caf-8937 hardware/qcom/media-caf/msm8937
-echo -e "${CLR_BLD_GRN}Sync Complete...${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
 echo -e ""
