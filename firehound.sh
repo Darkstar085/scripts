@@ -25,7 +25,13 @@ CLR_BLD_BLU=$CLR_RST$CLR_BLD$(tput setaf 4) #  blue, bold
 CLR_BLD_PPL=$CLR_RST$CLR_BLD$(tput setaf 5) #  purple, bold
 CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
 
-echo -e "${CLR_BLD_GRN}Cloning them rom sources and building 4 you automatically sir${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Setting up ccache${CLR_RST}"
+ccache -M 100G
+export USE_CCACHE=1
+echo -e ""
+echo -e "${CLR_BLD_GRN}Setting up screen{CLR_RST}"
+screen
+echo -e "${CLR_BLD_GRN}Syncing firehound rom sources${CLR_RST}"
 repo init -u git://github.com/FireHound/platform_manifest.git -b o8.1
 repo sync -j8
 echo -e ""
@@ -35,13 +41,13 @@ git clone https://github.com/kuntao-development/android_vendor_lenovo_kuntao -b 
 git clone https://github.com/arghyac35/android_kernel_lenovo_msm8953 -b 8.1.x kernel/lenovo/msm8953
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Deleting Stupid Doze thingy${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Deleting Doze to avoid build errors${CLR_RST}"
 rm -rf device/lenovo/kuntao/doze
 echo -e ""
-echo -e "${CLR_BLD_GRN}Automatically Building for you sir${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Compilation starting${CLR_RST}"
 source build/envsetup.sh
 lunch fh_kuntao-userdebug
-brunch kuntao -j8
+brunch fh_kuntao-userdebug -j8
 eco -e ""
-echo -e "${CLR_BLD_GRN}Closing de server${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Closing the server - Task Complete${CLR_RST}"
 sudo shutdown -h now
