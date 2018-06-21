@@ -31,7 +31,7 @@ echo -e "${CLR_BLD_RED}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚�
 echo -e ""
 echo -e "${CLR_BLD_RED}Syncing device repos...${CLR_RST}"
 git clone https://github.com/Sweeto143/device_xiaomi_land.git -b oreo device/xiaomi/land
-git clone https://github.com/Sweeto143/JasperKernel.git -b oreo kernel/xiaomi/msm8937
+git clone https://github.com/Sweeto143/kernel_xiaomi_msm8937.git -b oreo kernel/xiaomi/msm8937
 git clone https://github.com/Sweeto143/vendor_xiaomi.git -b oreo vendor/xiaomi
 echo -e "${CLR_BLD_RED}Sync Complete...${CLR_RST}"
 echo -e ""
