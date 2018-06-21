@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/Sweeto143/scripts_land/blob/land/logo.png" > 
+ <img src="https://github.com/Sweeto143/scripts/blob/darkstar/logo.png" > 
 </p>
 
 -----------------------------------------------------------------------
@@ -30,7 +30,7 @@ Run Commands
 Example
 
 ```bash
-      bash scripts/mine/odarkstar.sh 
+      bash scripts/mine/darkstar.sh 
 ```
 
 * It will clone all files automatically.
