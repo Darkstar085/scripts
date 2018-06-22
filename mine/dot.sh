@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
-# Copyright (C) 2018 Darkstar085<sipunkumar85@gmail.com)
-# Copyright (C) 2018 Sweeto143
+# Copyright (C) 2018 Sipun Ku Mahanta <sipunkumar85@gmail.com)
+# Copyright (C) 2018 Sweeto143@github / Darkstar085@XDA
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
@@ -29,20 +29,20 @@ echo -e "${CLR_BLD_GRN}██║  ██║██╔══██║██╔═�
 echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
 echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_GRN}Cloning Dot OS Source Files...${CLR_RST}"
+cd ~
+mkdir dot
+cd dot
+repo init -u git://github.com/DotOS/manifest.git -b dot-o
+repo sync  -f --force-sync --no-clone-bundle
+echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
+echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
 git clone https://github.com/dotOS-Devices/android_device_xiaomi_land.git -b dot-o device/xiaomi/land
 git clone https://github.com/dotOS-Devices/android_kernel_xiaomi_land.git -b dot-o kernel/xiaomi/msm8937
 git clone https://github.com/dotOS-Devices/proprietary_vendor_xiaomi_land.git -b dot-o vendor/xiaomi
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Cloning Hals...${CLR_RST}"
-rm -rf hardware/qcom/audio-caf
-rm -rf hardware/qcom/media-caf
-rm -rf hardware/qcom/display-caf
-git clone https://github.com/Sweeto143/hardware_qcom_audio.git -b oreo hardware/qcom/audio-caf/msm8996
-git clone https://github.com/Sweeto143/hardware_qcom_display.git -b oreo hardware/qcom/display-caf/msm8996
-git clone https://github.com/Sweeto143/hardware_qcom_media.git -b oreo hardware/qcom/media-caf/msm8996
-echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
 echo -e ""
