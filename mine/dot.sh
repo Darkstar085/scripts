@@ -37,6 +37,13 @@ repo init -u git://github.com/DotOS/manifest.git -b dot-o
 repo sync  -f --force-sync --no-clone-bundle
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_GRN}██████╗  ██████╗ ████████╗     ██████╗ ███████╗${CLR_RST}"
+echo -e "${CLR_BLD_GRN}██╔══██╗██╔═══██╗╚══██╔══╝    ██╔═══██╗██╔════╝${CLR_RST}"
+echo -e "${CLR_BLD_PPL}██║  ██║██║   ██║   ██║       ██║   ██║███████╗${CLR_RST}"
+echo -e "${CLR_BLD_PPL}██║  ██║██║   ██║   ██║       ██║   ██║╚════██║${CLR_RST}"
+echo -e "${CLR_BLD_BLU}██████╔╝╚██████╔╝   ██║       ╚██████╔╝███████║${CLR_RST}"
+echo -e "${CLR_BLD_BLU}╚═════╝  ╚═════╝    ╚═╝        ╚═════╝ ╚══════╝${CLR_RST}"
+echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
 git clone https://github.com/dotOS-Devices/android_device_xiaomi_land.git -b dot-o device/xiaomi/land
 git clone https://github.com/dotOS-Devices/android_kernel_xiaomi_land.git -b dot-o kernel/xiaomi/msm8937
