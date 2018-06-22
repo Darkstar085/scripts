@@ -29,6 +29,14 @@ echo -e "${CLR_BLD_GRN}██║  ██║██╔══██║██╔═�
 echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
 echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_GRN}Cloning Cardinal Sources...${CLR_RST}"
+cd ~
+mkdir cardinal
+cd cardinal
+repo init -u git://github.com/Cardinal-AOSP/manifest.git -b oreo-mr1 -m crd.xml
+repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
+echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
+echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
 git clone https://github.com/BirdSanctuary/android_device_xiaomi_land.git -b oreo-mr1 device/xiaomi/land
 git clone https://github.com/BirdSanctuary/android_kernel_xiaomi_land.git -b oreo-mr1 kernel/xiaomi/msm8937
