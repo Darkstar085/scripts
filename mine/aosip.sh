@@ -52,7 +52,18 @@ git clone https://github.com/Sweeto143/android_kernel_xiaomi_land.git -b oreo-mr
 git clone https://github.com/Sweeto143/proprietary_vendor_xiaomi_land.git -b oreo vendor/xiaomi
 echo -e "${CLR_BLD_PPL}Cloning Complete...${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_PPL}Setting UP Ccache..${CLR_RST}"
+ccache -M 100G
+export USE_CCACHE=1
+echo -e "$ -Done..${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_PPL}Building AOSiP..${CLR_RST}"
+. build/env*
+lunch aosip_land-userdebug
 echo -e "${CLR_BLD_PPL}Now You are good to Go${CLR_RST}"
 echo -e ""
+time mka kronic
 echo -e ""
+echo -e "${CLR_BLD_PPL}Building Complete...${CLR_RST}"
+echo -e ""
+
