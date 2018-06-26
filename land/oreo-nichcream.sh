@@ -35,15 +35,6 @@ git clone https://github.com/nichcream/wingtech_kernel_msm8937.git -b 8.1 kernel
 git clone https://github.com/nichcream/proprietary_vendor_xiaomi.git -b 8.1 vendor/xiaomi
 echo -e "${CLR_BLD_CYA}Sync Complete...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_CYA}Syncing Hals...${CLR_RST}"
-rm -rf hardware/qcom/audio-caf
-rm -rf hardware/qcom/media-caf
-rm -rf hardware/qcom/display-caf
-git clone https://github.com/Sweeto143/hardware_qcom_audio.git -b oreo hardware/qcom/audio-caf/msm8996
-git clone https://github.com/Sweeto143/hardware_qcom_display.git -b oreo hardware/qcom/display-caf/msm8996
-git clone https://github.com/Sweeto143/hardware_qcom_media.git -b oreo hardware/qcom/media-caf/msm8996
-echo -e "${CLR_BLD_CYA}Sync Complete...${CLR_RST}"
-echo -e ""
 echo -e "${CLR_BLD_CYA}Now You are good to Go${CLR_RST}"
 echo -e ""
 echo -e ""

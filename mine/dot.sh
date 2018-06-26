@@ -50,7 +50,19 @@ git clone https://github.com/dotOS-Devices/android_kernel_xiaomi_land.git -b dot
 git clone https://github.com/dotOS-Devices/proprietary_vendor_xiaomi_land.git -b dot-o vendor/xiaomi
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_PPL}Setting UP Ccache..${CLR_RST}"
+ccache -M 100G
+export USE_CCACHE=1
+echo -e "$ -Done..${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
+echo -e "${CLR_BLD_PPL}Building Dot OS..${CLR_RST}"
+. build/env*
+lunch dot_land-userdebug
+echo -e "${CLR_BLD_PPL}Now You are good to Go${CLR_RST}"
+echo -e ""
+brunch land
+echo -e ""
+echo -e ""
+echo -e "${CLR_BLD_GRN}Building Complete...${CLR_RST}"
 echo -e ""
 echo -e ""
