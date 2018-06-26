@@ -1,3 +1,6 @@
+# Copyright (C) 2018 Sipun Ku Mahanta<sipunkumar85@gmail.com)
+# Copyright (C) 2018 Sweeto143@github / Darkstar085@XDA
+
 rm -rf hardware/qcom/audio-caf
 rm -rf hardware/qcom/media-caf
 rm -rf hardware/qcom/display-caf
