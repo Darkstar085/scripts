@@ -51,7 +51,7 @@ echo -e "${CLR_BLD_BLU}            ██║  ██║╚██████╔�
 echo -e "${CLR_BLD_BLU}            ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝                     ${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
-git clone https://github.com/BirdSanctuary/android_device_xiaomi_land.git -b oreo-mr1 device/xiaomi/land
+git clone https://github.com/BirdSanctuary/device_xiaomi_land.git -b oreo-mr1 device/xiaomi/land
 git clone https://github.com/BirdSanctuary/android_kernel_xiaomi_land.git -b oreo-mr1 kernel/xiaomi/msm8937
 git clone https://github.com/BirdSanctuary/proprietary_vendor_xiaomi_land.git -b oreo-mr1 vendor/xiaomi
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
