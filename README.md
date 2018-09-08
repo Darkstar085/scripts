@@ -8,7 +8,7 @@
 -----------------------------------------------------------------------
 
 
-Sources For Xiaomi Redmi 3S/3X/Prime
+Sources For Land & Whyred
 ====================================
 
 
@@ -30,7 +30,7 @@ Run Commands
 Example
 
 ```bash
-      bash scripts/mine/darkstar.sh 
+      bash scripts/whyred/darkstar.sh 
 ```
 
 * It will clone all files automatically.
