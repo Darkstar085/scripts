@@ -29,11 +29,11 @@ echo -e "${CLR_BLD_YLW}██║  ██║██╔══██║██╔═�
 echo -e "${CLR_BLD_YLW}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
 echo -e "${CLR_BLD_YLW}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_YLW}Syncing device repos...${CLR_RST}"
+echo -e "${CLR_BLD_YLW}Cloning device repos...${CLR_RST}"
 git clone https://github.com/difr/android_device_xiaomi_land.git -b lineage-15.1 device/xiaomi/land
 git clone https://github.com/difr/android_kernel_xiaomi_msm8937.git -b lineage-15.1 kernel/xiaomi/msm8937
 git clone https://github.com/difr/android_vendor_xiaomi.git -b lineage-15.1 vendor/xiaomi
-echo -e "${CLR_BLD_YLW}Sync Complete...${CLR_RST}"
+echo -e "${CLR_BLD_YLW}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_YLW}Now You are good to Go${CLR_RST}"
 echo -e ""
