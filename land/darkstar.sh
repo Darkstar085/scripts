@@ -132,3 +132,9 @@ echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
 echo -e ""
 echo -e ""
+
+else
+usage
+printf "\n\e[1;31mERROR:\e[0m Unknown option: $1\n"
+
+fi
