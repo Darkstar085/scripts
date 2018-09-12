@@ -21,6 +21,16 @@ CLR_BLD_YLW=$CLR_RST$CLR_BLD$(tput setaf 3) #  yellow, bold
 CLR_BLD_BLU=$CLR_RST$CLR_BLD$(tput setaf 4) #  blue, bold
 CLR_BLD_PPL=$CLR_RST$CLR_BLD$(tput setaf 5) #  purple, bold
 CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
+
+usage() {
+
+printf "\n\033[1musage: $0 [team code]\033[0m\n"
+printf "\navailable team code options:"
+printf "\n     o         - for Oreo\n"
+printf "\n     p         - for Pie\n"
+
+}
+
 echo -e ""
 echo -e "${CLR_BLD_RED}██████╗  █████╗ ██████╗ ██╗  ██╗███████╗████████╗ █████╗ ██████╗ ${CLR_RST}"
 echo -e "${CLR_BLD_RED}██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝██╔════╝╚══██╔══╝██╔══██╗██╔══██╗${CLR_RST}"
@@ -29,6 +39,11 @@ echo -e "${CLR_BLD_RED}██║  ██║██╔══██║██╔═�
 echo -e "${CLR_BLD_RED}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
 echo -e "${CLR_BLD_RED}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
+
+[ -z "$1" ] && usage && exit
+
+if [ $1 = "o" ]
+  then
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
 git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b oreo device/xiaomi/whyred
 git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b oreo kernel/xiaomi/whyred
@@ -41,6 +56,25 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
 git clone https://github.com/Sweeto143/vendor_xiaomi_MiuiCamera.git -b oreo vendor/xiaomi/MiuiCamera
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
+echo -e ""
+echo -e ""
+elif [ $1 = "p" ]
+  then
+echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
+git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b pie device/xiaomi/whyred
+git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b pie kernel/xiaomi/sdm660
+git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b pie vendor/xiaomi
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
+git clone https://github.com/Sweeto143/clang-prebuilt.git -b 7.0.2 prebuilts/clang/host/linux-x86/clang-7.0.2
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
+git clone https://github.com/Sweeto143/vendor_xiaomi_MiuiCamera.git -b pie vendor/xiaomi/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
