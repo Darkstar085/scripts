@@ -120,7 +120,7 @@ echo -e ""
 echo -e "${CLR_BLD_PPL}Now You are good to Go${CLR_RST}"
 echo -e ""
 echo -e ""
-elif [ $1 = "tr" ]
+elif [ $1 = "dr" ]
   then
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
