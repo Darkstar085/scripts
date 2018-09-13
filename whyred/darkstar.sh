@@ -47,7 +47,7 @@ if [ $1 = "o" ]
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
 git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b oreo device/xiaomi/whyred
 git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b oreo kernel/xiaomi/whyred
-git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b oreo vendor/xiaomi
+git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b oreo vendor/xiaomi/whyred
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
