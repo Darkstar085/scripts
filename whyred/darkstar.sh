@@ -56,7 +56,8 @@ git clone https://github.com/LineageOS/android_packages_resources_devicesettings
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
-git clone https://github.com/Sweeto143/clang-prebuilt.git -b 7.0.2 prebuilts/clang/host/linux-x86/clang-7.0.2
+rm -rf prebuilts/clang/host/linux-x86
+git clone https://github.com/SuperiorOS-Devices/prebuilts_clang_host_linux-x86.git prebuilts/clang/host/linux-x86
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
@@ -80,7 +81,8 @@ git clone https://github.com/LineageOS/android_packages_resources_devicesettings
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
-git clone https://github.com/Sweeto143/clang-prebuilt.git -b 7.0.2 prebuilts/clang/host/linux-x86/clang-7.0.2
+rm -rf prebuilts/clang/host/linux-x86
+git clone https://github.com/SuperiorOS-Devices/prebuilts_clang_host_linux-x86.git prebuilts/clang/host/linux-x86
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
