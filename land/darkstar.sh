@@ -100,9 +100,9 @@ elif [ $1 = "nich" ]
   then
 echo -e ""
 echo -e "${CLR_BLD_CYA}Syncing device repos...${CLR_RST}"
-git clone https://github.com/nichcream/android_device_xiaomi_land.git -b 8.1 device/xiaomi/land
-git clone https://github.com/nichcream/wingtech_kernel_msm8937.git -b 8.1 kernel/xiaomi/msm8937
-git clone https://github.com/nichcream/proprietary_vendor_xiaomi.git -b 8.1 vendor/xiaomi
+git clone https://github.com/nichcream/android_device_xiaomi_land.git -b lineage-15.1 device/xiaomi/land
+git clone https://github.com/nichcream/wingtech_kernel_msm8937.git -b lineage-15.1 kernel/xiaomi/msm8937
+git clone https://github.com/nichcream/proprietary_vendor_xiaomi.git -b lineage-15.1 vendor/xiaomi
 echo -e "${CLR_BLD_CYA}Sync Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_CYA}Now You are good to Go${CLR_RST}"
