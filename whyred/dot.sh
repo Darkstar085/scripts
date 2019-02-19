@@ -32,21 +32,12 @@ echo -e "${CLR_BLD_RED}██████╔╝██║  ██║██║  �
 echo -e "${CLR_BLD_RED}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
 
-echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone git@github.com:dotOS-Devices/android_device_xiaomi_whyred.git device/xiaomi/whyred
-git clone git@github.com:dotOS-Devices/kernel_xiaomi_whyred.git kernel/xiaomi/whyred
-git clone git@github.com:dotOS-Devices/vendor_xiaomi_whyred.git vendor/xiaomi/whyred
-echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Hals...${CLR_RST}"
 rm -rf hardware/qcom/display-caf/msm8998
 rm -rf hardware/qcom/audio-caf/msm8998
 git clone git@github.com:SuperiorOS/android_hardware_qcom_display.git -b pie-caf-8998 hardware/qcom/display-caf/msm8998
 git clone git@github.com:SuperiorOS/android_hardware_qcom_audio.git -b pie-caf-8998 hardware/qcom/audio-caf/msm8998
-echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
-echo -e ""
-echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
-git clone https://github.com/Sweeto143/vendor_xiaomi_MiuiCamera.git -b pie vendor/xiaomi/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
