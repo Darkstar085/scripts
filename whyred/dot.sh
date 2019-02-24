@@ -36,7 +36,7 @@ echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Hals...${CLR_RST}"
 rm -rf hardware/qcom/display-caf/msm8998
 rm -rf hardware/qcom/audio-caf/msm8998
-git clone git@github.com:SuperiorOS/android_hardware_qcom_display.git -b pie-caf-8998 hardware/qcom/display-caf/msm8998
+git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-16.0-caf-8998 hardware/qcom/display-caf/msm8998
 git clone git@github.com:SuperiorOS/android_hardware_qcom_audio.git -b pie-caf-8998 hardware/qcom/audio-caf/msm8998
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
