@@ -51,6 +51,19 @@ echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
 git clone https://github.com/Sweeto143/vendor_xiaomi_MiuiCamera.git -b pie vendor/xiaomi/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
+echo -e ""
+echo -e "${CLR_BLD_RED}Cloning Hals...${CLR_RST}"
+rm -rf hardware/qcom/display/msm8998
+rm -rf hardware/qcom/audio/msm8998
+rm -rf hardware/qcom/media/msm8998
+git clone https://github.com/Citrus-CAF/hardware_qcom_display.git -b p9x-8998 hardware/qcom/display/msm8998
+git clone https://github.com/Citrus-CAF/hardware_qcom_audio.git -b p9x-8998 hardware/qcom/audio/msm8998
+git clone https://github.com/Citrus-CAF/hardware_qcom_media.git -b p9x-8998 hardware/qcom/media/msm8998
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
+echo -e ""
+echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
 echo -e ""
 echo -e ""
