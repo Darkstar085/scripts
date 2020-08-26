@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
-# Copyright (C) 2018 Sipun Ku Mahanta<sipunkumar85@gmail.com>
-# Copyright (C) 2018 Sweeto143@github / Darkstar085@XDA
+# Copyright (C) 2018-2020 Sipun Ku Mahanta<sipunkumar85@gmail.com>
+# Copyright (C) 2018-2020 Sweeto143@github / Darkstar085@XDA
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
@@ -62,7 +62,7 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
 rm -rf prebuilts/clang/host/linux-x86
-git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git prebuilts/clang/host/linux-x86
+git clone https://github.com/AOSiP/platform_prebuilts_clang_host_linux-x86.git -b oreo-mr1 prebuilts/clang/host/linux-x86
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
@@ -87,7 +87,7 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
 rm -rf prebuilts/clang/host/linux-x86
-git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git prebuilts/clang/host/linux-x86
+git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git -b pie prebuilts/clang/host/linux-x86
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
@@ -112,7 +112,7 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
 rm -rf prebuilts/clang/host/linux-x86
-git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git prebuilts/clang/host/linux-x86
+git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git -b ten prebuilts/clang/host/linux-x86
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -155,7 +155,7 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
 rm -rf prebuilts/clang/host/linux-x86
-git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git prebuilts/clang/host/linux-x86
+git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git -b ten prebuilts/clang/host/linux-x86
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
