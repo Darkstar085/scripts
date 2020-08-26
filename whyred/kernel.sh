@@ -68,6 +68,10 @@ echo -e "${CLR_BLD_RED}Pushing to Sakura-Devices Org...${CLR_RST}"
 git push -f git@github.com:Sakura-Devices/kernel_xiaomi_whyred.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_RED}Remove Kernel...${CLR_RST}"
+rm -rf whyred
+echo -e "${CLR_BLD_RED}Done...${CLR_RST}"
+echo -e ""
 CLONE_END=$(date +"%s")
 DURATION=$((CLONE_END - CLONE_START))
 echo -e ""
