@@ -155,7 +155,7 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
 rm -rf prebuilts/clang/host/linux-x86
-git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git -b ten prebuilts/clang/host/linux-x86
+git clone https://github.com/AOSiP/platform_prebuilts_clang_host_linux-x86.git -b ten prebuilts/clang/host/linux-x86 --depth=1
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
