@@ -48,6 +48,10 @@ echo -e "${CLR_BLD_RED}Pushing to My Github...${CLR_RST}"
 git push -f git@github.com:Sweeto143/kernel_oneplus_avicii.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_RED}Pushing to SuperiorOS-Devices Org...${CLR_RST}"
+git push -f git@github.com:SuperiorOS-Devices/kernel_oneplus_avicii.git
+echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
+echo -e ""
 echo -e ""
 echo -e "${CLR_BLD_RED}Remove Kernel...${CLR_RST}"
 rm -rf avicii
