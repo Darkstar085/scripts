@@ -42,6 +42,7 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Entering Kernel Directory...${CLR_RST}"
 cd avicii
+git checkout -b eleven
 echo -e "${CLR_BLD_RED}Now at $PWD...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Pushing to My Github...${CLR_RST}"
