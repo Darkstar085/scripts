@@ -33,7 +33,7 @@ echo -e ""
 CLONE_START=$(date +"%s")
 echo -e ""
 echo -e "${CLR_BLD_RED}Removing Existing Kernel...${CLR_RST}"
-rm -rf avicii
+rm -rf $PWD/avicii
 echo -e "${CLR_BLD_RED}Removed...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Kernel...${CLR_RST}"
@@ -55,7 +55,8 @@ echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
 echo -e ""
 echo -e "${CLR_BLD_RED}Remove Kernel...${CLR_RST}"
-rm -rf avicii
+cd ..
+rm -rf $PWD/avicii
 echo -e "${CLR_BLD_RED}Done...${CLR_RST}"
 echo -e ""
 CLONE_END=$(date +"%s")
