@@ -33,7 +33,7 @@ echo -e ""
 CLONE_START=$(date +"%s")
 echo -e ""
 echo -e "${CLR_BLD_RED}Removing Existing Kernel...${CLR_RST}"
-rm -rf whyred
+rm -rf $PWD/whyred
 echo -e "${CLR_BLD_RED}Removed...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Kernel...${CLR_RST}"
@@ -44,8 +44,8 @@ echo -e "${CLR_BLD_RED}Entering Kernel Directory...${CLR_RST}"
 cd whyred
 echo -e "${CLR_BLD_RED}Now at $PWD...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_RED}Changing branch to ten...${CLR_RST}"
-git checkout -b ten
+echo -e "${CLR_BLD_RED}Changing branch to eleven...${CLR_RST}"
+git checkout -b eleven
 echo -e "${CLR_BLD_RED}Checkout Done...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Pushing to My Github...${CLR_RST}"
@@ -60,16 +60,9 @@ echo -e "${CLR_BLD_RED}Pushing to PixysOS-Devices Org...${CLR_RST}"
 git push -f git@github.com:PixysOS-Devices/kernel_xiaomi_whyred.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_RED}Changing branch to 10...${CLR_RST}"
-git checkout -b 10
-echo -e "${CLR_BLD_RED}Checkout Done...${CLR_RST}"
-echo -e ""
-echo -e "${CLR_BLD_RED}Pushing to Sakura-Devices Org...${CLR_RST}"
-git push -f git@github.com:Sakura-Devices/kernel_xiaomi_whyred.git
-echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
-echo -e ""
 echo -e "${CLR_BLD_RED}Remove Kernel...${CLR_RST}"
-rm -rf whyred
+cd ..
+rm -rf $PWD/whyred
 echo -e "${CLR_BLD_RED}Done...${CLR_RST}"
 echo -e ""
 CLONE_END=$(date +"%s")
