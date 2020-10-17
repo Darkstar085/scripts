@@ -29,6 +29,7 @@ printf "\navailable team code options:"
 printf "\n     o         - for Oreo\n"
 printf "\n     p         - for Pie\n"
 printf "\n     q         - for Ten\n"
+printf "\n     r         - for Eleven\n"
 printf "\n     superior  - for Superior\n"
 printf "\n     sakura    - for Sakura\n"
 printf "\n     pixys     - for Pixys\n"
@@ -113,6 +114,17 @@ echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Toolchains...${CLR_RST}"
 rm -rf prebuilts/clang/host/linux-x86
 git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.git -b ten prebuilts/clang/host/linux-x86
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
+echo -e ""
+echo -e ""
+elif [ $1 = "r" ]
+  then
+echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
+git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b eleven device/xiaomi/whyred
+git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b eleven kernel/xiaomi/whyred
+git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b eleven vendor/xiaomi/whyred
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
