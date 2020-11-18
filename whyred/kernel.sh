@@ -37,7 +37,7 @@ rm -rf $PWD/whyred
 echo -e "${CLR_BLD_RED}Removed...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Kernel...${CLR_RST}"
-git clone git@github.com:sreekfreak995/kranul.git -b eas-old-cam whyred
+git clone git@github.com:sreekfreak995/kranul.git -b eas whyred
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Entering Kernel Directory...${CLR_RST}"
