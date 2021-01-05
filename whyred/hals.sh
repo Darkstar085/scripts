@@ -80,9 +80,9 @@ echo -e "${CLR_BLD_RED}Cloning Hals...${CLR_RST}"
 rm -rf hardware/qcom-caf/msm8998/display
 rm -rf hardware/qcom-caf/msm8998/audio
 rm -rf hardware/qcom-caf/msm8998/media
-git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-17.1-caf-8998 hardware/qcom-caf/msm8998/display
-git clone https://github.com/LineageOS/android_hardware_qcom_audio.git -b lineage-17.1-caf-8998 hardware/qcom-caf/msm8998/audio
-git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b lineage-17.1-caf-8998 hardware/qcom-caf/msm8998/media
+git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-17.1-caf-msm8998 hardware/qcom-caf/msm8998/display
+git clone https://github.com/LineageOS/android_hardware_qcom_audio.git -b lineage-17.1-caf-msm8998 hardware/qcom-caf/msm8998/audio
+git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b lineage-17.1-caf-msm8998 hardware/qcom-caf/msm8998/media
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -95,9 +95,9 @@ echo -e "${CLR_BLD_RED}Cloning Hals...${CLR_RST}"
 rm -rf hardware/qcom-caf/msm8998/display
 rm -rf hardware/qcom-caf/msm8998/audio
 rm -rf hardware/qcom-caf/msm8998/media
-git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-18.1-caf-8998 hardware/qcom-caf/msm8998/display
-git clone https://github.com/LineageOS/android_hardware_qcom_audio.git -b lineage-18.1-caf-8998 hardware/qcom-caf/msm8998/audio
-git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b lineage-18.1-caf-8998 hardware/qcom-caf/msm8998/media
+git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-18.1-caf-msm8998 hardware/qcom-caf/msm8998/display
+git clone https://github.com/LineageOS/android_hardware_qcom_audio.git -b lineage-18.1-caf-msm8998 hardware/qcom-caf/msm8998/audio
+git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b lineage-18.1-caf-msm8998 hardware/qcom-caf/msm8998/media
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
