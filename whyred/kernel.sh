@@ -60,6 +60,16 @@ echo -e "${CLR_BLD_RED}Pushing to PixysOS-Devices Org...${CLR_RST}"
 git push -f git@github.com:PixysOS-Devices/kernel_xiaomi_whyred.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
+git checkout -b 11
+echo -e "${CLR_BLD_RED}Pushing to Sakura-Devices Org...${CLR_RST}"
+git push -f git@github.com:Sakura-Devices/kernel_xiaomi_whyred.git
+echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
+echo -e ""
+git checkout -b dot11
+echo -e "${CLR_BLD_RED}Pushing to dot-Devices Org...${CLR_RST}"
+git push -f git@github.com:dotOS-Devices/kernel_xiaomi_whyred.git
+echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
+echo -e ""
 echo -e "${CLR_BLD_RED}Remove Kernel...${CLR_RST}"
 cd ..
 rm -rf $PWD/whyred
