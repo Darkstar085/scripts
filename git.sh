@@ -34,7 +34,5 @@ git config --global user.email "sipunkumar85@gmail.com"
 git config --global user.name "Sipun Ku Mahanta"
 git config --global alias.cp 'cherry-pick -s'
 git config --global alias.c 'commit -s'
-git config --global user.signingkey FAF2F21B1ACCAED41D73F5693C9B2D1302B3D437
-git config --global commit.gpgsign true
 echo -e ""
 echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
