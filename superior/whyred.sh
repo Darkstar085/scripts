@@ -36,10 +36,11 @@ lunch superior_whyred-userdebug
 export KBUILD_BUILD_USER="sweeto"
 export KBUILD_BUILD_HOST="yui"
 export SUPERIOR_OFFICIAL=true
-export SELINUX_IGNORE_NEVERALLOWS=true
+export TARGET_USES_FACE_UNLOCK=true
+export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-prebuilts/misc/linux-x86/ccache/ccache -M 150G
-export CCACHE_COMPRESS=1
+export CCACHE_DIR=/home/subins/superior/ccache
+ccache -M 50G
 mka bacon
 echo -e ""
 echo -e "${CLR_BLD_GRN}Build Completed...${CLR_RST}"
