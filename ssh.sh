@@ -28,6 +28,10 @@ echo -e "${CLR_BLD_GRN}██║  ██║██╔══██║██╔═�
 echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
 echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_GRN}Cloning ssh keys...${CLR_RST}"
+git clone git@github.com:Sweeto143/ssh-keys.git -b main .ssh
+echo -e ""
+echo -e "${CLR_BLD_GRN}Done...${CLR_RST}"
 echo -e "${CLR_BLD_GRN}Fixing ssh permissions...${CLR_RST}"
 echo -e ""
 cd ~
@@ -37,4 +41,4 @@ chmod 600 .ssh/id_rsa
 wait
 chmod 644 .ssh/id_rsa.pub
 echo -e ""
-echo -e "${CLR_BLD_GRN}Now You are good to Go${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Now You are good to Go...${CLR_RST}"
