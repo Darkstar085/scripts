@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
 # Copyright (C) 2018-2020 Sipun Ku Mahanta<sipunkumar85@gmail.com>
-# Copyright (C) 2018-2020 Sweeto143@github / Darkstar085@XDA
+# Copyright (C) 2018-2020 Darkstar085@github / Darkstar085@XDA
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
@@ -49,7 +49,7 @@ git checkout -b eleven
 echo -e "${CLR_BLD_RED}Checkout Done...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Pushing to My Github...${CLR_RST}"
-git push -f git@github.com:Sweeto143/kernel_xiaomi_whyred.git
+git push -f git@github.com:Darkstar085/kernel_xiaomi_whyred.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Pushing to SuperiorOS-Devices Org...${CLR_RST}"

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
 # Copyright (C) 2018-2020 Sipun Ku Mahanta<sipunkumar85@gmail.com>
-# Copyright (C) 2018-2020 Sweeto143@github / Darkstar085@XDA
+# Copyright (C) 2018-2020 Darkstar085@github / Darkstar085@XDA
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
@@ -51,9 +51,9 @@ echo -e ""
 if [ $1 = "o" ]
   then
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b oreo device/xiaomi/whyred
-git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b oreo kernel/xiaomi/whyred
-git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b oreo vendor/xiaomi/whyred
+git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b oreo device/xiaomi/whyred
+git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b oreo kernel/xiaomi/whyred
+git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b oreo vendor/xiaomi/whyred
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Devicesettings...${CLR_RST}"
@@ -67,7 +67,7 @@ git clone https://github.com/AOSiP/platform_prebuilts_clang_host_linux-x86.git -
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
-git clone https://github.com/Sweeto143/vendor_xiaomi_MiuiCamera.git -b oreo vendor/xiaomi/MiuiCamera
+git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b oreo vendor/xiaomi/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -76,9 +76,9 @@ echo -e ""
 elif [ $1 = "p" ]
   then
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b pie device/xiaomi/whyred
-git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b pie kernel/xiaomi/whyred
-git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b pie vendor/xiaomi/whyred
+git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b pie device/xiaomi/whyred
+git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b pie kernel/xiaomi/whyred
+git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b pie vendor/xiaomi/whyred
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Devicesettings...${CLR_RST}"
@@ -92,7 +92,7 @@ git clone https://github.com/SuperiorOS/android_prebuilts_clang_host_linux-x86.g
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning MIUI camera...${CLR_RST}"
-git clone https://github.com/Sweeto143/vendor_xiaomi_MiuiCamera.git -b pie vendor/xiaomi/MiuiCamera
+git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b pie vendor/xiaomi/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -101,9 +101,9 @@ echo -e ""
 elif [ $1 = "q" ]
   then
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b ten device/xiaomi/whyred
-git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b ten kernel/xiaomi/whyred
-git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b ten vendor/xiaomi/whyred
+git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b ten device/xiaomi/whyred
+git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b ten kernel/xiaomi/whyred
+git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b ten vendor/xiaomi/whyred
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Devicesettings...${CLR_RST}"
@@ -122,9 +122,10 @@ echo -e ""
 elif [ $1 = "r" ]
   then
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/Sweeto143/device_xiaomi_whyred.git -b eleven device/xiaomi/whyred
-git clone https://github.com/Sweeto143/kernel_xiaomi_whyred.git -b eleven kernel/xiaomi/whyred
-git clone https://github.com/Sweeto143/vendor_xiaomi_whyred.git -b eleven vendor/xiaomi/whyred
+git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b eleven device/xiaomi/whyred
+git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b eleven kernel/xiaomi/whyred
+git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b eleven vendor/xiaomi/whyred
+git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b eleven vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
