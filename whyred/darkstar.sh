@@ -126,6 +126,7 @@ git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b eleven devi
 git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b eleven kernel/xiaomi/whyred
 git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b eleven vendor/xiaomi/whyred
 git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b eleven vendor/MiuiCamera
+git clone https://github.com/Darkstar085/vendor_whyredparts.git -b eleven vendor/whyredparts
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
