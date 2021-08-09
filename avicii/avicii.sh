@@ -75,14 +75,9 @@ rm -rf vendor/oneplus/avicii
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii.git -b eleven device/oneplus/avicii
-git clone https://github.com/LineageOS/android_device_oneplus_common.git -b lineage-18.0 device/oneplus/common
-git clone https://github.com/SuperiorOS-Devices/kernel_oneplus_avicii.git -b eleven kernel/oneplus/avicii
-git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii.git -b eleven vendor/oneplus/avicii
-echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
-echo -e ""
-echo -e "${CLR_BLD_RED}Cloning Proton...${CLR_RST}"
-git clone https://github.com/kdrag0n/proton-clang.git -b master prebuilts/clang/host/linux-x86/clang-proton
+git clone https://github.com/Darkstar085/device_oneplus_avicii.git -b eleven device/oneplus/avicii
+git clone https://github.com/Darkstar085/device_oneplus_common.git -b eleven device/oneplus/common
+git clone https://github.com/Darkstar085/vendor_oneplus_avicii.git -b eleven vendor/oneplus/avicii
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
