@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
-# Copyright (C) 2018-2020 Sipun Ku Mahanta<sipunkumar85@gmail.com>
-# Copyright (C) 2018-2020 Darkstar085@github / Darkstar085@XDA
+# Copyright (C) 2018-2021 Sipun Ku Mahanta<sipunkumar85@gmail.com>
+# Copyright (C) 2018-2021 Darkstar085@github / Darkstar085@XDA
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
@@ -63,11 +63,6 @@ echo -e ""
 git checkout -b 11
 echo -e "${CLR_BLD_RED}Pushing to Sakura-Devices Org...${CLR_RST}"
 git push -f git@github.com:Sakura-Devices/kernel_xiaomi_whyred.git
-echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
-echo -e ""
-git checkout -b dot11
-echo -e "${CLR_BLD_RED}Pushing to dot-Devices Org...${CLR_RST}"
-git push -f git@github.com:dotOS-Devices/kernel_xiaomi_whyred.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Remove Kernel...${CLR_RST}"
