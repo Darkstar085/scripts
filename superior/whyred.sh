@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
-# Copyright (C) 2018 Sipun Ku Mahanta<sipunkumar85@gmail.com>
-# Copyright (C) 2018 Sweeto143@github / Darkstar085@XDA
+# Copyright (C) 2018-2021 Sipun Ku Mahanta<sipunkumar85@gmail.com>
+# Copyright (C) 2018-2021 Sweeto143@github / Darkstar085@XDA
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
@@ -33,14 +33,16 @@ echo -e ""
 . build/envsetup.sh
 rm -rf out/target/product/*
 lunch superior_whyred-userdebug
+export host=sweeto
+export HOSTNAME=yui
+export USER=sweeto
 export KBUILD_BUILD_USER="sweeto"
 export KBUILD_BUILD_HOST="yui"
 export SUPERIOR_OFFICIAL=true
-export TARGET_USES_FACE_UNLOCK=true
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-export CCACHE_DIR=/home/subins/superior/ccache
-ccache -M 50G
+export CCACHE_DIR=/home2/Sipun/ccache
+ccache -M 100G
 mka bacon
 echo -e ""
 echo -e "${CLR_BLD_GRN}Build Completed...${CLR_RST}"

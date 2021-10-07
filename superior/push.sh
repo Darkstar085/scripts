@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
-# Copyright (C) 2018 Sipun Ku Mahanta<sipunkumar85@gmail.com>
-# Copyright (C) 2018 Sweeto143@github / Darkstar085@XDA
+# Copyright (C) 2018-2021 Sipun Ku Mahanta<sipunkumar85@gmail.com>
+# Copyright (C) 2018-2021 Sweeto143@github / Darkstar085@XDA
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
