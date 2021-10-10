@@ -252,10 +252,10 @@ echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
 git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b dot11 device/xiaomi/whyred
-git clone https://github.com/Darkstar085/device_xiaomi_whyred-common.git -b dot11 device/xiaomi/sdm660-common
+git clone https://github.com/Darkstar085/device_xiaomi_whyred-common.git -b eleven device/xiaomi/sdm660-common
 git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b eleven kernel/xiaomi/whyred
 git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b eleven vendor/xiaomi/whyred
-git clone https://github.com/Darkstar085/vendor_xiaomi_whyred-common.git -b dot11 vendor/xiaomi/sdm660-common
+git clone https://github.com/Darkstar085/vendor_xiaomi_whyred-common.git -b eleven vendor/xiaomi/sdm660-common
 git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b eleven vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
