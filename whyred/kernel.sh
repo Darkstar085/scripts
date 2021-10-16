@@ -44,8 +44,8 @@ echo -e "${CLR_BLD_RED}Entering Kernel Directory...${CLR_RST}"
 cd whyred
 echo -e "${CLR_BLD_RED}Now at $PWD...${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_RED}Changing branch to eleven...${CLR_RST}"
-git checkout -b eleven
+echo -e "${CLR_BLD_RED}Changing branch to twelve...${CLR_RST}"
+git checkout -b twelve
 echo -e "${CLR_BLD_RED}Checkout Done...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Pushing to My Github...${CLR_RST}"
@@ -60,7 +60,7 @@ echo -e "${CLR_BLD_RED}Pushing to PixysOS-Devices Org...${CLR_RST}"
 git push -f git@github.com:PixysOS-Devices/kernel_xiaomi_whyred.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
 echo -e ""
-git checkout -b 11
+git checkout -b 12
 echo -e "${CLR_BLD_RED}Pushing to Sakura-Devices Org...${CLR_RST}"
 git push -f git@github.com:Sakura-Devices/kernel_xiaomi_whyred.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
