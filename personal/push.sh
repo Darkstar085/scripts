@@ -1,7 +1,6 @@
 #!/bin/bash
 # Copyright (C) 2015 Paranoid Android Project
-# Copyright (C) 2018 Sipun Ku Mahanta<sipunkumar85@gmail.com>
-# Copyright (C) 2018 Sweeto143@github / Darkstar085@XDA
+# Copyright (C) 2018-2021 Sipun Ku Mahanta<sipunkumar85@gmail.com>
 
 # PA Colors
 # red = errors, cyan = warnings, green = confirmations, blue = informational
@@ -28,17 +27,12 @@ echo -e "${CLR_BLD_GRN}██║  ██║██╔══██║██╔═�
 echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
 echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
-echo -e "${CLR_BLD_GRN}Cloning ssh keys...${CLR_RST}"
-git clone git@github.com:Sweeto143/ssh-keys.git -b main .ssh
-echo -e ""
-echo -e "${CLR_BLD_GRN}Done...${CLR_RST}"
-echo -e "${CLR_BLD_GRN}Fixing ssh permissions...${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Uploading to Sourceforge...${CLR_RST}"
 echo -e ""
 cd ~
-chmod 700 .ssh
-wait
-chmod 600 .ssh/id_rsa
-wait
-chmod 644 .ssh/id_rsa.pub
+cd superior/out/target/product/whyred
+sftp darkstar085@frs.sourceforge.net
+cd /home/frs/project/superioros/whyred
+put Superior*.zip
 echo -e ""
-echo -e "${CLR_BLD_GRN}Now You are good to Go...${CLR_RST}"
+echo -e "${CLR_BLD_GRN}Upload Completed...${CLR_RST}"

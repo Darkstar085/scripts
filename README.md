@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/Sweeto143/scripts/blob/darkstar/logo.png" > 
+ <img src="https://user-images.githubusercontent.com/29405483/138224247-544d09ea-9106-4cec-9ac2-08ccb4d19fe0.png" >
 </p>
 
 -----------------------------------------------------------------------
