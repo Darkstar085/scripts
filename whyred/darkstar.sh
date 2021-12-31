@@ -150,10 +150,10 @@ rm -rf kernel/xiaomi/whyred
 rm -rf vendor/xiaomi
 rm -rf vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/SuperiorOS-Devices/device_xiaomi_whyred.git -b twelve device/xiaomi/whyred
-git clone https://github.com/SuperiorOS-Devices/device_xiaomi_whyred-common.git -b twelve device/xiaomi/sdm660-common
-git clone https://github.com/SuperiorOS-Devices/kernel_xiaomi_whyred.git -b twelve kernel/xiaomi/whyred
-git clone https://github.com/SuperiorOS-Devices/vendor_xiaomi_whyred.git -b twelve vendor/xiaomi
+git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b twelve device/xiaomi/whyred
+git clone https://github.com/Darkstar085/device_xiaomi_whyred-common.git -b twelve device/xiaomi/sdm660-common
+git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b twelve kernel/xiaomi/whyred
+git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b twelve vendor/xiaomi
 git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b twelve vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
@@ -166,18 +166,16 @@ echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
 rm -rf device/xiaomi/whyred
 rm -rf device/xiaomi/sdm660-common
 rm -rf kernel/xiaomi/whyred
-rm -rf vendor/xiaomi/whyred
-rm -rf vendor/xiaomi/sdm660-common
+rm -rf vendor/xiaomi
 rm -rf vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/SuperiorOS-Devices/device_xiaomi_whyred.git -b eleven device/xiaomi/whyred
-git clone https://github.com/SuperiorOS-Devices/device_xiaomi_whyred-common.git -b eleven device/xiaomi/sdm660-common
-git clone https://github.com/SuperiorOS-Devices/kernel_xiaomi_whyred.git -b eleven kernel/xiaomi/whyred
-git clone https://github.com/SuperiorOS-Devices/vendor_xiaomi_whyred.git -b eleven vendor/xiaomi/whyred
-git clone https://github.com/SuperiorOS-Devices/vendor_xiaomi_whyred-common.git -b eleven vendor/xiaomi/sdm660-common
-git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b eleven vendor/MiuiCamera
+git clone https://github.com/SuperiorOS-Devices/device_xiaomi_whyred.git -b twelvw device/xiaomi/whyred
+git clone https://github.com/SuperiorOS-Devices/device_xiaomi_whyred-common.git -b twelve device/xiaomi/sdm660-common
+git clone https://github.com/SuperiorOS-Devices/kernel_xiaomi_whyred.git -b twelve kernel/xiaomi/whyred
+git clone https://github.com/SuperiorOS-Devices/vendor_xiaomi_whyred.git -b twelve vendor/xiaomi
+git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b twelve vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -210,23 +208,21 @@ echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
 rm -rf device/xiaomi/whyred
 rm -rf device/xiaomi/sdm660-common
 rm -rf kernel/xiaomi/whyred
-rm -rf vendor/xiaomi/whyred
-rm -rf vendor/xiaomi/sdm660-common
+rm -rf vendor/xiaomi
 rm -rf vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/PixysOS-Devices/device_xiaomi_whyred.git -b eleven device/xiaomi/whyred
-git clone https://github.com/PixysOS-Devices/device_xiaomi_whyred-common.git -b eleven device/xiaomi/sdm660-common
-git clone https://github.com/PixysOS-Devices/kernel_xiaomi_whyred.git -b eleven kernel/xiaomi/whyred
-git clone https://github.com/PixysOS-Devices/vendor_xiaomi_whyred.git -b eleven vendor/xiaomi/whyred
-git clone https://github.com/PixysOS-Devices/vendor_xiaomi_whyred-common.git -b eleven vendor/xiaomi/sdm660-common
-git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b eleven vendor/MiuiCamera
+git clone https://github.com/PixysOS-Devices/device_xiaomi_whyred.git -b twelve device/xiaomi/whyred
+git clone https://github.com/PixysOS-Devices/device_xiaomi_whyred-common.git -b twelve device/xiaomi/sdm660-common
+git clone https://github.com/PixysOS-Devices/kernel_xiaomi_whyred.git -b twelve kernel/xiaomi/whyred
+git clone https://github.com/PixysOS-Devices/vendor_xiaomi_whyred.git -b twelve vendor/xiaomi
+git clone https://github.com/Darkstar085/vendor_xiaomi_MiuiCamera.git -b twelve vendor/MiuiCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Devicesettings...${CLR_RST}"
 rm -rf packages/resources/devicesettings
-git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git -b lineage-18.1 packages/resources/devicesettings
+git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git -b lineage-19.0 packages/resources/devicesettings
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
