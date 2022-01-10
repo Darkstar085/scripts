@@ -97,6 +97,7 @@ rm -rf kernel/oneplus/avicii
 rm -rf vendor/oneplus/avicii
 rm -rf vendor/oneplus/sm7250-vendor
 rm -rf vendor/oneplus/firmware
+rm -rf vendor/oneplus/wfdcommon
 rm -rf hardware/oneplus
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
@@ -105,8 +106,9 @@ git clone https://github.com/Darkstar085/device_oneplus_avicii.git -b twelve dev
 git clone https://github.com/Darkstar085/device_oneplus_avicii-common.git -b twelve device/oneplus/sm7250-common
 git clone https://github.com/Darkstar085/kernel_oneplus_avicii.git -b twelve kernel/oneplus/avicii
 git clone https://github.com/Darkstar085/vendor_oneplus_avicii.git -b twelve vendor/oneplus/avicii
-git clone https://gitlab.com/Darkstar085/vendor_oneplus_avicii-common.git -b twelve vendor/oneplus/sm7250-common
-git clone https://gitlab.com/Darkstar085/hardware_oneplus.git -b twelve hardware/oneplus
+git clone https://github.com/Darkstar085/vendor_oneplus_avicii-common.git -b twelve vendor/oneplus/sm7250-common
+git clone https://github.com/Darkstar085/hardware_oneplus.git -b twelve hardware/oneplus
+git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus_wfdcommon.git -b lito vendor/oneplus/wfdcommon
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus-firmware.git -b eleven vendor/oneplus/firmware
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
