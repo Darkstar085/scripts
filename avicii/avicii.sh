@@ -91,19 +91,16 @@ echo -e ""
 elif [ $1 = "s" ]
   then
 echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
-rm -rf device/oneplus/avicii
-rm -rf device/oneplus/sm7250-common
+rm -rf device/oneplus
 rm -rf kernel/oneplus/avicii
-rm -rf vendor/oneplus/avicii
-rm -rf vendor/oneplus/sm7250-vendor
-rm -rf vendor/oneplus/firmware
-rm -rf vendor/oneplus/wfdcommon
+rm -rf vendor/oneplus
 rm -rf hardware/oneplus
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
 git clone https://github.com/Darkstar085/device_oneplus_avicii.git -b twelve device/oneplus/avicii
 git clone https://github.com/Darkstar085/device_oneplus_avicii-common.git -b twelve device/oneplus/sm7250-common
+git clone https://github.com/KakatkarAkshay/device_oneplus_extras.git -b twelve device/oneplus/extras
 git clone https://github.com/Darkstar085/kernel_oneplus_avicii.git -b twelve kernel/oneplus/avicii
 git clone https://github.com/Darkstar085/vendor_oneplus_avicii.git -b twelve vendor/oneplus/avicii
 git clone https://github.com/Darkstar085/vendor_oneplus_avicii-common.git -b twelve vendor/oneplus/sm7250-common
