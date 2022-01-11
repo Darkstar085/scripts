@@ -28,6 +28,7 @@ printf "\navailable team code options:"
 printf "\n     q         - for Ten\n"
 printf "\n     r         - for Eleven\n"
 printf "\n     s         - for Twelve\n"
+printf "\n  superior     - for Superior\n"
 
 }
 
@@ -107,6 +108,29 @@ git clone https://github.com/Darkstar085/vendor_oneplus_avicii-common.git -b twe
 git clone https://github.com/Darkstar085/hardware_oneplus.git -b twelve hardware/oneplus
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus_wfdcommon.git -b lito vendor/oneplus/wfdcommon
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus-firmware.git -b eleven vendor/oneplus/firmware
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
+echo -e ""
+elif [ $1 = "s" ]
+  then
+echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
+rm -rf device/oneplus
+rm -rf kernel/oneplus/avicii
+rm -rf vendor/oneplus
+rm -rf hardware/oneplus
+echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
+git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii.git -b twelve device/oneplus/avicii
+git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii-common.git -b twelve device/oneplus/sm7250-common
+git clone https://github.com/SuperiorOS-Devices/device_oneplus_extras.git -b twelve device/oneplus/extras
+git clone https://github.com/SuperiorOS-Devices/kernel_oneplus_avicii.git -b twelve kernel/oneplus/avicii
+git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii.git -b twelve vendor/oneplus/avicii
+git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git -b twelve vendor/oneplus/sm7250-common
+git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b twelve hardware/oneplus
+git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_wfdcommon.git -b twelve vendor/oneplus/wfdcommon
+git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b twelve vendor/oneplus/firmware
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"

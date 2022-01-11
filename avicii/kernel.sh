@@ -36,12 +36,11 @@ rm -rf $PWD/avicii
 echo -e "${CLR_BLD_RED}Removed...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Kernel...${CLR_RST}"
-git clone git@github.com:stormbreaker-project/avicii.git -b ten avicii
+git clone git@github.com:PixysOS-Devices/kernel_oneplus_sm7250.git -b twelve avicii
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Entering Kernel Directory...${CLR_RST}"
 cd avicii
-git checkout -b eleven
 echo -e "${CLR_BLD_RED}Now at $PWD...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Pushing to My Github...${CLR_RST}"
