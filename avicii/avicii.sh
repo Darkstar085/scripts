@@ -112,7 +112,7 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
 echo -e ""
-elif [ $1 = "s" ]
+elif [ $1 = "superior" ]
   then
 echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
 rm -rf device/oneplus
