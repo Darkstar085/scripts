@@ -108,6 +108,7 @@ git clone https://github.com/Darkstar085/vendor_oneplus_avicii-common.git -b twe
 git clone https://github.com/Darkstar085/hardware_oneplus.git -b twelve hardware/oneplus
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus_wfdcommon.git -b lito vendor/oneplus/wfdcommon
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus-firmware.git -b eleven vendor/oneplus/firmware
+git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -131,6 +132,7 @@ git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git
 git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b twelve hardware/oneplus
 git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_wfdcommon.git -b twelve vendor/oneplus/wfdcommon
 git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b twelve vendor/oneplus/firmware
+git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
