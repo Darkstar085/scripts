@@ -29,6 +29,7 @@ printf "\n     q         - for Ten\n"
 printf "\n     r         - for Eleven\n"
 printf "\n     s         - for Twelve\n"
 printf "\n  superior     - for Superior\n"
+printf "\n  device       - for devicesettings\n"
 
 }
 
@@ -135,12 +136,14 @@ git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b twelve ve
 git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
+echo -e ""
+elif [ $1 = "device" ]
+  then
 echo -e "${CLR_BLD_RED}Cloning Devicesettings...${CLR_RST}"
 rm -rf packages/resources/devicesettings
 git clone https://github.com/SuperiorOS-Devices/android_packages_resources_devicesettings.git -b twelve packages/resources/devicesettings
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
-echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
-echo -e ""
 else
 usage
 printf "\n\e[1;31mERROR:\e[0m Unknown option: $1\n"
