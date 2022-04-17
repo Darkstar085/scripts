@@ -126,12 +126,10 @@ echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
 git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii.git -b twelve device/oneplus/avicii
 git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii-common.git -b twelve device/oneplus/sm7250-common
-git clone https://github.com/SuperiorOS-Devices/device_oneplus_extras.git -b twelve device/oneplus/extras
 git clone https://github.com/SuperiorOS-Devices/kernel_oneplus_avicii.git -b twelve kernel/oneplus/avicii
 git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii.git -b twelve vendor/oneplus/avicii
 git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git -b twelve vendor/oneplus/sm7250-common
 git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b twelve hardware/oneplus
-git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_wfdcommon.git -b twelve vendor/oneplus/wfdcommon
 git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b twelve vendor/oneplus/firmware
 git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
