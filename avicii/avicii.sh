@@ -29,7 +29,7 @@ printf "\n     q         - for Ten\n"
 printf "\n     r         - for Eleven\n"
 printf "\n     s         - for Twelve\n"
 printf "\n  superior     - for Superior\n"
-printf "\n  device       - for devicesettings\n"
+printf "\n  clean        - for deleting\n"
 
 }
 
@@ -121,6 +121,7 @@ rm -rf device/oneplus
 rm -rf kernel/oneplus/avicii
 rm -rf vendor/oneplus
 rm -rf hardware/oneplus
+rm -rf vendor/gapps
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
@@ -132,16 +133,21 @@ git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git
 git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b twelve hardware/oneplus
 git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b twelve vendor/oneplus/firmware
 git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
+git clone https://gitlab.com/superioros/android_vendor_google_gms.git -b twelvedotone vendor/gms
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
 echo -e ""
-elif [ $1 = "device" ]
+elif [ $1 = "clean" ]
   then
-echo -e "${CLR_BLD_RED}Cloning Devicesettings...${CLR_RST}"
-rm -rf packages/resources/devicesettings
-git clone https://github.com/SuperiorOS-Devices/android_packages_resources_devicesettings.git -b twelve packages/resources/devicesettings
-echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e "${CLR_BLD_RED}Deleting device trees...${CLR_RST}"
+rm -rf device/oneplus
+rm -rf kernel/oneplus/avicii 
+rm -rf vendor/oneplus
+rm -rf hardware/oneplus
+rm -rf vendor/gms
+git clone https://gitlab.com/superioros/android_vendor_gapps.git -b twelvedotone vendor/gapps
+echo -e "${CLR_BLD_RED}Device trees removed ...${CLR_RST}"
 else
 usage
 printf "\n\e[1;31mERROR:\e[0m Unknown option: $1\n"
