@@ -121,7 +121,6 @@ rm -rf device/oneplus
 rm -rf kernel/oneplus/avicii
 rm -rf vendor/oneplus
 rm -rf hardware/oneplus
-rm -rf vendor/gapps
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
@@ -133,7 +132,6 @@ git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git
 git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b twelve hardware/oneplus
 git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b twelve vendor/oneplus/firmware
 git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
-git clone https://gitlab.com/superioros/android_vendor_google_gms.git -b twelvedotone vendor/gms
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -145,8 +143,6 @@ rm -rf device/oneplus
 rm -rf kernel/oneplus/avicii 
 rm -rf vendor/oneplus
 rm -rf hardware/oneplus
-rm -rf vendor/gms
-git clone https://gitlab.com/superioros/android_vendor_gapps.git -b twelvedotone vendor/gapps
 echo -e "${CLR_BLD_RED}Device trees removed ...${CLR_RST}"
 else
 usage
