@@ -97,30 +97,7 @@ rm -rf device/oneplus
 rm -rf kernel/oneplus/avicii
 rm -rf vendor/oneplus
 rm -rf hardware/oneplus
-echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
-echo -e ""
-echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
-git clone https://github.com/Darkstar085/device_oneplus_avicii.git -b twelve device/oneplus/avicii
-git clone https://github.com/Darkstar085/device_oneplus_avicii-common.git -b twelve device/oneplus/sm7250-common
-git clone https://github.com/KakatkarAkshay/device_oneplus_extras.git -b twelve device/oneplus/extras
-git clone https://github.com/Darkstar085/kernel_oneplus_avicii.git -b twelve kernel/oneplus/avicii
-git clone https://github.com/Darkstar085/vendor_oneplus_avicii.git -b twelve vendor/oneplus/avicii
-git clone https://github.com/Darkstar085/vendor_oneplus_avicii-common.git -b twelve vendor/oneplus/sm7250-common
-git clone https://github.com/Darkstar085/hardware_oneplus.git -b twelve hardware/oneplus
-git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus_wfdcommon.git -b lito vendor/oneplus/wfdcommon
-git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_oneplus-firmware.git -b eleven vendor/oneplus/firmware
-git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
-echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
-echo -e ""
-echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
-echo -e ""
-elif [ $1 = "superior" ]
-  then
-echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
-rm -rf device/oneplus
-rm -rf kernel/oneplus/avicii
-rm -rf vendor/oneplus
-rm -rf hardware/oneplus
+rm -rf packages/apps/GoogleCamera
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
@@ -132,7 +109,30 @@ git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git
 git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b twelve hardware/oneplus
 git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b twelve vendor/oneplus/firmware
 git clone https://gitlab.com/superioros/vendor_oneplus_avicii-camera.git -b twelve vendor/oneplus/avicii-camera
-git clone https://gitlab.com/KakatkarAkshay/packages_apps_googlecamera.git -b twelve packages/apps/GoogleCamera
+git clone https://gitlab.com/superioros/packages_apps_googlecamera.git -b twelve packages/apps/GoogleCamera
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
+echo -e ""
+elif [ $1 = "superior" ]
+  then
+echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
+rm -rf device/oneplus
+rm -rf kernel/oneplus/avicii
+rm -rf vendor/oneplus
+rm -rf hardware/oneplus
+rm -rf packages/apps/GoogleCamera
+echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
+git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii.git -b thirteen device/oneplus/avicii
+git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii-common.git -b thirteen device/oneplus/sm7250-common
+git clone https://github.com/SuperiorOS-Devices/kernel_oneplus_avicii.git -b thirteen kernel/oneplus/avicii
+git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii.git -b thirteen vendor/oneplus/avicii
+git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git -b thirteen vendor/oneplus/sm7250-common
+git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b thirteen hardware/oneplus
+git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b thirteen vendor/oneplus/firmware
+git clone https://gitlab.com/superioros/packages_apps_googlecamera.git -b thirteen packages/apps/GoogleCamera
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
@@ -144,6 +144,7 @@ rm -rf device/oneplus
 rm -rf kernel/oneplus/avicii 
 rm -rf vendor/oneplus
 rm -rf hardware/oneplus
+rm -rf packages/apps/GoogleCamera
 echo -e "${CLR_BLD_RED}Device trees removed ...${CLR_RST}"
 else
 usage
