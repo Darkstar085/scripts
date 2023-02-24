@@ -194,6 +194,9 @@ git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b thirteen ve
 git clone https://github.com/Darkstar085/vendor_xiaomi_whyred-common.git -b thirteen vendor/xiaomi/sdm660-common
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
+echo -e "${CLR_BLD_RED}Clone Proton clang...${CLR_RST}"
+git clone https://github.com/kdrag0n/proton-clang.git -b master prebuilts/clang/host/linux-x86/clang-proton
+echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
 echo -e ""
 elif [ $1 = "clean" ]
