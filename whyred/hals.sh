@@ -30,6 +30,7 @@ printf "\n     p         - for Pie\n"
 printf "\n     q         - for Ten\n"
 printf "\n     r         - for Eleven\n"
 printf "\n     s         - for Twelve\n"
+printf "\n     t         - for Thirteen\n"
 
 }
 
@@ -117,6 +118,18 @@ echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
 echo -e ""
+echo -e ""
+elif [ $1 = "t" ]
+  then
+echo -e ""
+echo -e "${CLR_BLD_RED}Cloning Hals...${CLR_RST}"
+rm -rf hardware/qcom-caf/msm8998/display
+rm -rf hardware/qcom-caf/msm8998/audio
+rm -rf hardware/qcom-caf/msm8998/media
+git clone https://github.com/SuperiorOS/android_hardware_qcom_display.git -b thirteen-caf-msm8998 hardware/qcom-caf/msm8998/display
+git clone https://github.com/SuperiorOS/android_hardware_qcom_audio.git -b thirteen-caf-msm8998 hardware/qcom-caf/msm8998/audio
+git clone https://github.com/SuperiorOS/android_hardware_qcom_media.git -b thirteen-caf-msm8998 hardware/qcom-caf/msm8998/media
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 else
 usage
