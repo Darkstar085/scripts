@@ -12,6 +12,7 @@ then
   export KBUILD_BUILD_USER="Sweeto"
   export KBUILD_BUILD_HOST="Yui"
   lunch superior_whyred-userdebug
+  make installclean
   mka bacon -j$(nproc --all) | tee build.log
 elif [ "$rom" = "pe" ]
 then
@@ -20,5 +21,6 @@ then
   export KBUILD_BUILD_USER="Sweeto"
   export KBUILD_BUILD_HOST="Yui"
   lunch aosp_whyred-userdebug
+  make installclean
   mka bacon -j$(nproc --all) | tee build.log
 fi
