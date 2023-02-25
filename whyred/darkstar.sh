@@ -184,6 +184,7 @@ echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
 rm -rf device/xiaomi
 rm -rf kernel/xiaomi
 rm -rf vendor/xiaomi
+rm -rf hardware/xiaomi
 echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
@@ -191,7 +192,8 @@ git clone https://github.com/Darkstar085/device_xiaomi_whyred.git -b pe device/x
 git clone https://github.com/Darkstar085/device_xiaomi_whyred-common.git -b pe device/xiaomi/sdm660-common
 git clone https://github.com/Darkstar085/kernel_xiaomi_whyred.git -b thirteen kernel/xiaomi/whyred
 git clone https://github.com/Darkstar085/vendor_xiaomi_whyred.git -b thirteen vendor/xiaomi/whyred
-git clone https://github.com/Darkstar085/vendor_xiaomi_whyred-common.git -b thirteen vendor/xiaomi/sdm660-common
+git clone https://github.com/Darkstar085/vendor_xiaomi_whyred-common.git -b pe vendor/xiaomi/sdm660-common
+git clone https://github.com/PixelExperience/hardware_xiaomi.git -b thirteen hardware/xiaomi
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Clone Proton clang...${CLR_RST}"
