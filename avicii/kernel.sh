@@ -36,7 +36,7 @@ rm -rf $PWD/avicii
 echo -e "${CLR_BLD_RED}Removed...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Cloning Kernel...${CLR_RST}"
-git clone git@github.com:PixysOS-Devices/kernel_oneplus_sm7250.git -b twelve avicii
+git clone git@github.com:PixelExperience-Devices/kernel_oneplus_sm7250.git -b thirteen avicii
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Entering Kernel Directory...${CLR_RST}"
@@ -50,6 +50,9 @@ echo -e ""
 echo -e "${CLR_BLD_RED}Pushing to SuperiorOS-Devices Org...${CLR_RST}"
 git push -f git@github.com:SuperiorOS-Devices/kernel_oneplus_avicii.git
 echo -e "${CLR_BLD_RED}Pushed...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Pushing to PixysOS-Devices Org...${CLR_RST}"
+git push -f git@github.com:PixysOS-Devices/kernel_oneplus_sm7250.git
 echo -e ""
 echo -e ""
 echo -e "${CLR_BLD_RED}Remove Kernel...${CLR_RST}"
