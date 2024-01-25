@@ -12,6 +12,10 @@ echo "🌐 Global Index Source Installer 🌐"
 echo "Author: Sipun Ku Mahanta"
 echo "--------------------------------"
 
+# Install rclone and jq
+echo "📦 Installing rclone and jq..."
+sudo apt-get install -y rclone jq
+
 # Install the global_index_source tool
 echo "🚀 Installing global_index_source tool..."
 curl -s https://raw.githubusercontent.com/ksauraj/global_index_source/master/setup | bash
@@ -19,10 +23,6 @@ curl -s https://raw.githubusercontent.com/ksauraj/global_index_source/master/set
 # Perform initial setup
 echo "🔧 Running the initial setup..."
 ksau setup
-
-# Install dependencies
-echo "📦 Installing dependencies..."
-ksau dependencies
 
 # Completion message
 echo "✅ Installation and setup completed successfully!"
