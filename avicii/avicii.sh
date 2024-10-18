@@ -28,6 +28,7 @@ printf "\navailable team code options:"
 printf "\n     q         - for Ten\n"
 printf "\n     r         - for Eleven\n"
 printf "\n     s         - for Twelve\n"
+printf "\n     u         - for Fourteen\n"
 printf "\n  superior     - for Superior\n"
 printf "\n  clean        - for deleting\n"
 
@@ -133,6 +134,22 @@ git clone https://github.com/SuperiorOS-Devices/vendor_oneplus_avicii-common.git
 git clone https://github.com/SuperiorOS-Devices/hardware_oneplus.git -b thirteen hardware/oneplus
 git clone https://gitlab.com/superioros/vendor_oneplus-firmware.git -b thirteen vendor/oneplus/firmware
 git clone https://gitlab.com/superioros/packages_apps_googlecamera.git -b thirteen packages/apps/GoogleCamera
+echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
+echo -e ""
+elif [ $1 = "u" ]
+  then
+echo -e "${CLR_BLD_RED}Removing device repos...${CLR_RST}"
+rm -rf device/oneplus
+rm -rf kernel/oneplus/avicii
+rm -rf vendor/oneplus
+echo -e "${CLR_BLD_RED}Device repos removed ...${CLR_RST}"
+echo -e ""
+echo -e "${CLR_BLD_RED}Cloning device repos...${CLR_RST}"
+git clone https://github.com/SuperiorOS-Devices/device_oneplus_avicii.git -b fourteen device/oneplus/avicii
+git clone https://github.com/SuperiorOS-Devices/kernel_oneplus_avicii.git -b fourteen kernel/oneplus/avicii
+git clone https://gitlab.com/superioros/vendor_oneplus_avicii.git -b fourteen vendor/oneplus/avicii
 echo -e "${CLR_BLD_RED}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_RED}Now You are good to Go${CLR_RST}"
