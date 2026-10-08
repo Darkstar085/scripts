@@ -43,8 +43,11 @@ The `git.sh` setup configures the Git identity and adds short aliases for common
 
 | Alias | Command | Use case |
 |---|---|---|
-| `git c` | `commit -s` | Create a commit with the required sign-off. |
-| `git cp` | `cherry-pick -s` | Cherry-pick a commit and add a sign-off. |
+| `git g` | `git` | Run Git commands through the short `g` alias. |
+| `git c` | `commit` | Create a normal commit. |
+| `git cp` | `cherry-pick` | Cherry-pick a commit without automatically adding a sign-off. |
+| `git cs` | `commit -s` | Create a signed-off commit. |
+| `git cps` | `cherry-pick -s` | Cherry-pick a commit with a sign-off. |
 | `git s` | `status` | Check the full working tree status. |
 | `git ss` | `status --short --branch` | Quickly see changed files and branch tracking. |
 | `git br` | `branch --show-current` | Show the current branch name. |
@@ -57,27 +60,50 @@ The `git.sh` setup configures the Git identity and adds short aliases for common
 | `git ds` | `diff --cached` | View staged changes before committing. |
 | `git lg` | `log --oneline --decorate --graph --all` | View a compact graphical commit history. |
 | `git last` | `log -1 --stat` | Inspect the latest commit and changed-file summary. |
+| `git stat` | `diff HEAD --stat` | Show the current working-tree diff summary. |
+| `git show` | `show --stat --oneline HEAD` | Show the latest commit and its file summary. |
+| `git undo` | `reset --soft HEAD~1` | Undo the latest commit while keeping its changes staged. |
 | `git check` | status + latest commit + remotes | Quick repository snapshot before or after a change. |
 | `git verify` | status + full latest commit + diff stat | Verify the final local commit and its change summary. |
 | `git rhead` | local HEAD + remote HEAD | Compare the current local commit with the remote branch HEAD. |
 
 ### Common use cases
 
-**Sync current branch to GitHub**
+**Create a normal commit**
 ```bash
-git rh
+git c
+```
+
+**Create a signed-off commit**
+```bash
+git cs
+```
+
+**Cherry-pick normally**
+```bash
+git cp <commit>
+```
+
+**Cherry-pick with sign-off**
+```bash
+git cps <commit>
 ```
 
 **Check what changed**
 ```bash
 git ss
 git d
+git stat
 ```
 
-**Check staged files before committing**
+**Check the latest commit**
 ```bash
-git ds
-git c
+git show
+```
+
+**Undo the latest commit but keep its changes**
+```bash
+git undo
 ```
 
 **Check whether local and remote are in sync**
@@ -91,4 +117,3 @@ git rhead
 git lg
 git last
 ```
-

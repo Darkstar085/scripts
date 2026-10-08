@@ -13,7 +13,7 @@ echo -e "${CLR_BLD_GRN}██╔══██╗██╔══██╗██╔
 echo -e "${CLR_BLD_GRN}██║  ██║███████║██████╔╝█████╔╝ ███████╗   ██║   ███████║██████╔╝${CLR_RST}"
 echo -e "${CLR_BLD_GRN}██║  ██║██╔══██║██╔══██╗██╔═██╗ ╚════██║   ██║   ██╔══██║██╔══██╗${CLR_RST}"
 echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  ██║██║  ██╗███████║   ██║   ██║  ██║██║  ██║${CLR_RST}"
-echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
+echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Setting-up Users info...${CLR_RST}"
 echo -e ""
@@ -23,8 +23,11 @@ git config --global user.email "sipunkumar85@gmail.com"
 git config --global user.name "S I P U N"
 
 # Define Git aliases
-git config --global alias.cp 'cherry-pick -s'
-git config --global alias.c 'commit -s'
+git config --global alias.cp 'cherry-pick'
+git config --global alias.c 'commit'
+git config --global alias.cps 'cherry-pick -s'
+git config --global alias.cs 'commit -s'
+git config --global alias.g 'git'
 
 # Basic Git aliases
 git config --global alias.s 'status'
@@ -43,6 +46,9 @@ git config --global alias.d 'diff'
 git config --global alias.ds 'diff --cached'
 git config --global alias.lg 'log --oneline --decorate --graph --all'
 git config --global alias.last 'log -1 --stat'
+git config --global alias.stat 'diff HEAD --stat'
+git config --global alias.show 'show --stat --oneline HEAD'
+git config --global alias.undo 'reset --soft HEAD~1'
 
 # Repository verification aliases
 git config --global alias.check '!git status --short --branch && echo && git log -1 --oneline --decorate && echo && git remote -v'
