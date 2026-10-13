@@ -11,6 +11,7 @@ git config --global alias.c 'commit'
 git config --global alias.cp 'cherry-pick'
 git config --global alias.cs 'commit -s'
 git config --global alias.cps 'cherry-pick -s'
+git config --global alias.ra 'commit --amend --reset-author --no-edit --quiet'
 
 # Status and branch aliases
 git config --global alias.s 'status'
